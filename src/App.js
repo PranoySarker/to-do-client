@@ -1,14 +1,21 @@
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import Calender from './pages/Calender';
+import Home from './pages/Home';
+import Footer from './pages/shared/Footer';
 import Header from './pages/shared/Header';
+import Todo from './pages/Todo';
 
 function App() {
   return (
     <div>
       <Header></Header>
-      <h1 className="text-3xl font-bold underline text-blue-500">
-        Hello world!
-      </h1>
-
+      <Routes>
+        <Route path='/' element={<Home></Home>}></Route>
+        <Route path='/todo' element={<Todo></Todo>}></Route>
+        <Route path='/calender' element={<Calender></Calender>}></Route>
+      </Routes>
+      <Footer></Footer>
     </div>
   );
 }

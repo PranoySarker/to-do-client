@@ -1,10 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     const routes = <>
-        <li><a>To do</a></li>
-        <li><a>Completed Task</a></li>
-        <li><a>Calender</a></li>
+        <li><Link to='/'>Home</Link></li>
+        <li><Link to='/todo'>To do</Link></li>
+        <li><Link to=''>Completed Task</Link></li>
+        <li><Link to='/calender'>Calender</Link></li>
     </>
     return (
         <div>
