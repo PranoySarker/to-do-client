@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Header = () => {
     const routes = <>
         <li><Link to='/'>Home</Link></li>
-        <li><Link to='/todo'>To do</Link></li>
+        <li><Link to='/todo'>Add To-do</Link></li>
         <li><Link to=''>Completed Task</Link></li>
         <li><Link to='/calender'>Calender</Link></li>
     </>
