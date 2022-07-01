@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 const Home = () => {
@@ -8,7 +8,7 @@ const Home = () => {
 
 
     useEffect(() => {
-        fetch('http://localhost:5000/todos')
+        fetch('https://lit-island-29284.herokuapp.com/todos')
             .then(res => res.json())
             .then(data => { setTask(data) })
     }, [])
@@ -35,7 +35,7 @@ const Home = () => {
                                         <tr>
                                             <th><input type="checkbox" /></th>
                                             <td>{task.todo}</td>
-                                            <td>Blue</td>
+                                            <td><Link class="btn btn-xs" to={`/todo/edit/${task._id}`}>Edit</Link></td>
                                         </tr>
                                     )
                                 }
