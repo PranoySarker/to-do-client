@@ -8,7 +8,7 @@ const Edit = () => {
     const [todo, setTodo] = useState({});
 
     useEffect(() => {
-        fetch(`http://localhost:5000/todo/${id}`)
+        fetch(`https://lit-island-29284.herokuapp.com/todo/${id}`)
             .then(res => res.json())
             .then(data => {
                 setTodo(data)
@@ -17,7 +17,7 @@ const Edit = () => {
 
     const onSubmit = data => {
         console.log(data)
-        const url = `http://localhost:5000/todo/${id}`;
+        const url = `https://lit-island-29284.herokuapp.com/todo/${id}`;
         fetch(url, {
             method: 'PUT',
             headers: {
