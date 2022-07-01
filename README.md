@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+
 
 A simple [To-Do React App](https://cheery-nasturtium-b9fc05.netlify.app).
 ### with endgame criteria 
