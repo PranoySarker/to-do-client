@@ -29,6 +29,7 @@ const Edit = () => {
             .then(data => {
                 console.log(data);
                 reset();
+                alert('Your todo edited successfully!!');
             })
     };
     return (
